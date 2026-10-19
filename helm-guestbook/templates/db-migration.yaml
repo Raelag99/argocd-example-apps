@@ -4,7 +4,7 @@ metadata:
   name: db-migration-job
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation,HookSucceded
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation,HookSucceded,HookCompleted
 spec:
   backoffLimit: 2
   template:
